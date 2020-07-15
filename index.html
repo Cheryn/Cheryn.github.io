@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Heart Capture!! Chorus Battle</title>
+    </head>
+    <body>
+        <aside>
+            <figure>
+                <div id="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <figcaption>HCCB</figcaption>
+            </figure>
+
+            <figure>
+                <div id="menu">
+                    <img src="images/menu.svg">
+                </div>
+            </figure>
+            
+            <nav>
+                <ul>
+                    <li><a href="#"></a>Home</li>
+                    <li><div class="dropdown">
+                            <button class="dropbtn" onclick="dropdownFunction(CBInfo)">CB Info
+                                <!-- <i class="fa fa-caret-down"></i> -->
+                            </button>
+                            <div class="dropdown-content" id="CBInfo">
+                                <a href="#">Schedule</a>
+                                <a href="#">Rules</a>
+                                <a href="#">Scoring Rubric</a>
+                                <a href="#">Prizes</a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li><div class="dropdown">
+                            <button class="dropbtn" onclick="dropdownFunction(Lore)">Lore</button>
+                            <div class="dropdown-content" id="Lore">
+                                <a href="#">Story</a>
+                                <a href="#">School Paper</a>
+                                <a href="#">Items</a>
+                                <a href="#">Prizes</a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li><div class="dropdown">
+                            <button class="dropbtn" onclick="dropdownFunction(Results)">Results</button>
+                            <div class="dropdown-content" id="Results">
+                                <a href="#">R1</a>
+                                <a href="#">R2</a>
+                                <a href="#">R3</a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li><a href="#"></a>Our Team</li>
+                    <li><a href="#"></a>FAQ</li>
+
+
+                    <a href="javascript:void(0);" 
+                    onclick="menuFunction()"></a>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <h1>Premise</h1>
+            <p>HeartCapture!! Chorus Battle (HCCB) is an Otome game-themed chorus battle, with a storyline that 
+                follows the plot of a fictional Otome game set in a Japanese high school. Teams take the role of 
+                the main character in the game and are free to romance any of the seven capture targets (or maybe 
+                more). They do this by taking on challenges that correspond to each of the capture targets' 
+                interest and incorporating them into their entries. </p>
+            <p>Do note that pursuing a capture target is not required to proceed in the CB. Affection points with 
+                characters do not affect your score. For more information please check the section titled Character 
+                Affection below.</p>
+            <p>There are a total of three rounds, each themed around different story events. Each round lasts around 
+                6 weeks, with 2 weeks of judging in between (with exceptions).</p>
+            <p>HCCB is an elimination-based chorus battle, meaning that the lowest-scoring teams of each round will 
+                not be able to continue. </p>
+
+            <h1>Forming Teams</h1>
+            <p>Teams must have at least two vocalists, but other than that there are no requirements to how many 
+                vocalists or non-singing staff members one's team can have. However, teams can only have up to 12 
+                members. Vocalists who also take staff roles only take up one member slot.</p>
+            <p>Teams must elect a team leader as the main point of contact for the CB staff, as well as a backup 
+                leader in case the regular leader is unavailable.</p>
+            <p>Teams may be altered freely before round two takes place, but the HCCB staff must be notified each 
+                time. </p>
+            <p>You may only join one team. However, if your team is eliminated, you are allowed to join another
+                 team afterwards.</p>
+            
+            <h1>Song Guidelines</h1>
+            <p>Entries must be at least 2:15 minutes long, and no longer than 6:30 minutes. Any work past the 
+            six and a half minute mark will not be judged. </p>
+            <p>Songs can be in any language, including constructed languages, as long as an english translation 
+                is provided to the judges. Be aware that we may not be familiar with all languages, and that we 
+                are most familiar with English and Japanese.</p>
+            <a href="#" class="cta">Heart Capture!! CB</a>
+        </main>
+
+        <script>
+            (function menuFunction() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('#menu img');
+                
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+
+            function dropdownFunction(element) {
+                var x = element.id;
+                document.getElementById(x).classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var x = document.getElementsByClassName("dropbtn");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    // alert(x[i].id);
+                    if (x[i].contains('show')) {
+                        // alert(x[i].contains('show'));
+                        x[i].remove('show');
+                    }
+                }
+                // var myDropdown = document.getElementById('CBInfo');
+                // if (myDropdown.classList.contains('show')) {
+                //     alert(myDropdown.classList.contains('show'));
+                // myDropdown.classList.remove('show');
+                // }
+            }
+            }
+        </script>
+    </body>
+</html>
