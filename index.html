@@ -22,7 +22,7 @@
                 </div>
             </figure>
             
-            <nav>
+            <nav id="navbar">
                 <ul>
                     <li><a href="#"></a>Home</li>
                     <li><div class="dropdown">
@@ -33,7 +33,6 @@
                                 <a href="#">Schedule</a>
                                 <a href="#">Rules</a>
                                 <a href="#">Scoring Rubric</a>
-                                <a href="#">Prizes</a>
                             </div>
                         </div> 
                     </li>
@@ -41,9 +40,9 @@
                             <button class="dropbtn" onclick="dropdownFunction(Lore)">Lore</button>
                             <div class="dropdown-content" id="Lore">
                                 <a href="#">Story</a>
+                                <a href="#">Characters</a>
                                 <a href="#">School Paper</a>
                                 <a href="#">Items</a>
-                                <a href="#">Prizes</a>
                             </div>
                         </div> 
                     </li>
@@ -102,6 +101,7 @@
         </main>
 
         <script>
+            //open menu navigation bar
             (function menuFunction() {
                 var menu = document.querySelector('ul'),
                     menulink = document.querySelector('#menu img');
@@ -112,6 +112,7 @@
                 });
             })();
 
+            //toggle dropdowns
             function dropdownFunction(element) {
                 var x = element.id;
                 document.getElementById(x).classList.toggle("show");
@@ -120,20 +121,32 @@
             // Close the dropdown if the user clicks outside of it
             window.onclick = function(e) {
             if (!e.target.matches('.dropbtn')) {
-                var x = document.getElementsByClassName("dropbtn");
+                var x = document.getElementsByClassName("dropdown-content");
                 var i;
                 for (i = 0; i < x.length; i++) {
                     // alert(x[i].id);
-                    if (x[i].contains('show')) {
-                        // alert(x[i].contains('show'));
-                        x[i].remove('show');
+                    // alert(x[i].classList.contains('show'));
+                    // alert(!e.target.matches(x[i].id));
+                    // alert(x[i].id);
+                    if (x[i].classList.contains('show')) {
+                        x[i].classList.remove('show');
                     }
                 }
-                // var myDropdown = document.getElementById('CBInfo');
-                // if (myDropdown.classList.contains('show')) {
-                //     alert(myDropdown.classList.contains('show'));
-                // myDropdown.classList.remove('show');
-                // }
+                }
+            }
+
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {stickyFunction()};
+            // Get the header
+            var header = document.getElementById("navbar");
+            // Get the offset position of the navbar
+            var sticky = 216;
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function stickyFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
             }
             }
         </script>
