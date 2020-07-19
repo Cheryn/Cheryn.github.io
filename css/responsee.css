@@ -63,19 +63,12 @@ table {
   border-collapse:collapse;
   border-spacing:0;
   text-align:left;
-  width:30rem;
+  width:100%;
 }
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting:before,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_asc:before,
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_asc_disabled:before,
-table.dataTable thead .sorting_desc:after,
-table.dataTable thead .sorting_desc:before,
-table.dataTable thead .sorting_desc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:before {
-bottom: .5em;
+
+#schedule-table {
+  width:30rem;
+  margin:auto;
 }
 
 table tr td, table tr th {padding:0.625rem;}
