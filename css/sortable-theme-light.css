@@ -1,3 +1,5 @@
+
+
 /* line 2, ../sass/_sortable.sass */
 table[data-sortable] {
     border-collapse: collapse;
@@ -5,12 +7,12 @@ table[data-sortable] {
   }
   /* line 6, ../sass/_sortable.sass */
   table[data-sortable] th {
-    vertical-align: bottom;
+    vertical-align: middle;
     font-weight: bold;
   }
   /* line 10, ../sass/_sortable.sass */
   table[data-sortable] th, table[data-sortable] td {
-    text-align: left;
+    text-align: middle;
     padding: 10px;
   }
   /* line 14, ../sass/_sortable.sass */

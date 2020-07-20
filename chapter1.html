@@ -12,6 +12,7 @@
     <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/responsee.css">
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
@@ -105,97 +106,86 @@
     <!-- MAIN -->
     <main role="main">    
       <!-- Header -->
-      <section class="section-top-padding background-white margin-top-160">
+      <section class="section-top-padding background-white">
         <div class="line text-center">
           <h2 class="text-dark text-size-50 text-m-size-40"><b>Results - Chapter 1</b></h2>
           <p class="animated-element text-size-10 slow margin-bottom-10">
-            Only the Top __ ranks and scores are shown and sorted.
+            Only the Top _ ranks and scores are shown. 
           </p>
-          <p class="animated-element text-size-10 slow margin-bottom-10">
-            Note from Ryn: I'm aware there's a bug with trying to get an ascending order sort on 
-            touch screen devices. Try holding down longer that might fix it? Otherwise I'm sorry, 
-            it's still in the descending order at least...? :'( 
+          <p class="animated-element slow margin-bottom-10" style="font-size:10px;text-align:left">
+            Note from Ryn: There might be a bug with the sorting on phones/ipads. Try holding down the sort button instead of clicking, that should help? Otherwise I'm sorry :'(
           </p>
           
           <hr class="break background-primary break-small break-center margin-bottom-50">
         </div>
         <div class="line margin-bottom-50" style="overflow-x:auto;">
           <!-- <table class="text-size-16" style="margin:auto;"> -->
-          <table class="text-size-16" style="table-layout: fixed;" data-sortable>
+          <table class="results-table text-size-10" data-sortable>
           <!-- <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"> -->
             <thead>
               <tr>
-                <th class="th-sm" style="word-wrap: break-word">Team Name
-                </th>
-                <th class="th-sm" style="word-wrap: break-word">Overall Score
-                </th>
-                <th class="th-sm" style="word-wrap: break-word">Affection Score
-                </th>
-                <th class="th-sm" style="word-wrap: break-word">Overall
-                </th>
-                <th class="th-sm" style="word-wrap: break-word">Vocals
-                </th>
-                <th class="th-sm" style="word-wrap: break-word">Mix
-                </th>
-                <th class="th-sm" style="word-wrap: break-word">Art
-                </th>
-                <th class="th-sm" style="word-wrap: break-word">Animation
-                </th>
-                <th class="th-sm" style="word-wrap: break-word">Status
-                </th>
-              </tr>
+                  <th data-sortable="false">Team</th>
+                  <th>Rank</th>
+                  <th>Vocals</th>
+                  <th>Mix</th>
+                  <th>Art</th>
+                  <th>Animation</th>
+                  <th data-sortable="false">Overall Score</th>
+                  <th data-sortable="false">Affection Score</th>
+                  <th data-sortable="false">Status</th>
+                </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Anamewith$(%"</td>
-                <td>1000</td>
                 <td>1</td>
+                <td>5</td>
                 <td>3</td>
                 <td>10</td>
-                <td>100</td>
-                <td>91</td>
-                <td>40</td>
+                <td>11</td>
+                <td>9</td>
+                <td>4</td>
                 <td>Active</td>
               </tr>
               <tr>
                 <td>1BALAALALA</td>
-                <td>600</td>
-                <td>4</td>
                 <td>2</td>
-                <td>10</td>
-                <td>100</td>
-                <td>10</td>
-                <td>100</td>
+                <td>4</td>
+                <td>11</td>
+                <td>11</td>
+                <td>2</td>
+                <td>1</td>
+                <td>5</td>
                 <td>Eliminated</td>
               </tr>
               <tr>
-                <td>1310</td>
-                <td>600</td>
+                <td>10</td>
+                <td>6</td>
                 <td>4</td>
-                <td>2</td>
-                <td>10</td>
-                <td>100</td>
-                <td>10</td>
-                <td>100</td>
+                <td>5</td>
+                <td>1</td>
+                <td>1</td>
+                <td>6</td>
+                <td>11</td>
                 <td>Eliminated</td>
               </tr>
               <tr>
                 <td>カメンOFF</td>
-                <td>800</td>
+                <td>8</td>
                 <td>3</td>
-                <td>3</td>
-                <td>20</td>
-                <td>80</td>
+                <td>1</td>
+                <td>2</td>
+                <td>8</td>
                 <td>10</td>
-                <td>910</td>
+                <td>9</td>
                 <td>Eliminated</td>
               </tr>
               <tr>
                 <td>Lost ☀ Sun</td>
-                <td>80</td>
+                <td>8</td>
                 <td>7</td>
                 <td>2</td>
-                <td>28</td>
+                <td>1</td>
                 <td>8</td>
                 <td>4</td>
                 <td>10</td>
@@ -203,17 +193,17 @@
               </tr>
               <tr>
                 <td>𝕡𝕤𝕪𝕔𝕙𝕖◈𝕕𝕖𝕝𝕚𝕒</td>
-                <td>60</td>
-                <td>31</td>
                 <td>6</td>
-                <td>0</td>
-                <td>30</td>
-                <td>50</td>
-                <td>10</td>
+                <td>3</td>
+                <td>6</td>
+                <td>2</td>
+                <td>3</td>
+                <td>11</td>
+                <td>1</td>
                 <td>Eliminated</td>
               </tr>
             </tbody>
-            <tfoot>
+            <!-- <tfoot>
               <tr>
                 <th class="th-sm">Team Name
                 </th>
@@ -234,7 +224,7 @@
                 <th class="th-sm">Status
                 </th>
               </tr>
-            </tfoot>
+            </tfoot> -->
           </table>
         </div>
       </section>
@@ -291,6 +281,6 @@
 
     <script type="text/javascript" src="js/responsee.js"></script>
     <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/template-scripts.js"></script> 
+    <script type="text/javascript" src="js/template-scripts.js"></script>     
   </body>
 </html>
